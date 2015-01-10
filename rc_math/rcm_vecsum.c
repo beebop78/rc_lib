@@ -1,27 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rc_math.h                                          :+:      :+:    :+:   */
+/*   rcm_vecsum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/01/10 00:49:59 by rcargou           #+#    #+#             */
-/*   Updated: 2015/01/10 02:41:23 by rcargou          ###   ########.fr       */
+/*   Created: 2015/01/10 02:43:30 by rcargou           #+#    #+#             */
+/*   Updated: 2015/01/10 02:46:10 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef RC_MATH_H
-# define RC_MATH_H
-# define PI 3.1415926535897932384626433832795
-# define PRECISION 1E-26
-# include <stdlib.h>
+#include "rcm_math.h"
 
-typedef struct	s_point
+t_point rcm_vecsum(t_point vec1, t_point vec2)
 {
-	double		x;
-	double		y;
-	double		z;
-}				t_point;
-double rcm_sqrt(double n);
-double rcm_fabs(double n);
-#endif
+	vec1.x += vec2.x;
+	vec1.y += vec2.y;
+	vec1.z += vec2.z
+	return (vec1);
+}

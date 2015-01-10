@@ -1,27 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rc_math.h                                          :+:      :+:    :+:   */
+/*   rcm_vecscalarfactor.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/01/10 00:49:59 by rcargou           #+#    #+#             */
-/*   Updated: 2015/01/10 02:41:23 by rcargou          ###   ########.fr       */
+/*   Created: 2015/01/10 02:39:15 by rcargou           #+#    #+#             */
+/*   Updated: 2015/01/10 02:43:20 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef RC_MATH_H
-# define RC_MATH_H
-# define PI 3.1415926535897932384626433832795
-# define PRECISION 1E-26
-# include <stdlib.h>
+#include "rc_math.h"
 
-typedef struct	s_point
+t_point rcm_vecscalarfactor(t_point vec, double factor)
 {
-	double		x;
-	double		y;
-	double		z;
-}				t_point;
-double rcm_sqrt(double n);
-double rcm_fabs(double n);
-#endif
+	vec.x *= factor;
+	vec.y *= factor;
+	vec.z *= factor;
+	return (vec);
+}
