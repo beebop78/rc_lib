@@ -6,7 +6,7 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/10 00:49:59 by rcargou           #+#    #+#             */
-/*   Updated: 2015/01/10 02:41:23 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/01/11 14:14:12 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,14 @@ typedef struct	s_point
 	double		y;
 	double		z;
 }				t_point;
-double rcm_sqrt(double n);
-double rcm_fabs(double n);
+double			rcm_sqrt(double n);
+double			rcm_fabs(double n);
+t_point			rcm_vecsum(t_point vec1, t_point vec2);
+double			rcm_min(double *values, int size);
+t_point			rcm_vecscalarfactor(t_point vec, double factor);
+double			*rcm_2dequation(double a, double b, double c, int *n);
+t_point			rcm_vecnormalize(t_point vec);
+t_point			rcm_rotmatrice(t_point point, double rotx, double roty, double rotz);
+double			rcm_vecnorme(t_point vec)
 #endif
+

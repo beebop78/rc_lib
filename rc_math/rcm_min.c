@@ -1,21 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rcm_vecsum.c                                       :+:      :+:    :+:   */
+/*   rcm_min.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/01/10 02:43:30 by rcargou           #+#    #+#             */
-/*   Updated: 2015/01/10 14:51:40 by rcargou          ###   ########.fr       */
+/*   Created: 2015/01/10 14:40:20 by rcargou           #+#    #+#             */
+/*   Updated: 2015/01/10 14:53:55 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "rc_math.h"
-
-t_point rcm_vecsum(t_point vec1, t_point vec2)
+double rcm_min(double *values, int size)
 {
-	vec1.x += vec2.x;
-	vec1.y += vec2.y;
-	vec1.z += vec2.z;
-	return (vec1);
+	int				a;
+	double			smalest_value;
+
+	a = 1;
+	if (!size)
+		return (0);
+	smalest_value = *values;
+	while (a < size)
+	{
+		if (values[a] < smalest_value)
+			smalest_value = values[a];
+		a++;
+	}
+	return (smalest_value);
 }

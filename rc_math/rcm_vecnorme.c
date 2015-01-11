@@ -1,21 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rcm_vecsum.c                                       :+:      :+:    :+:   */
+/*   rcm_vecnorme.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/01/10 02:43:30 by rcargou           #+#    #+#             */
-/*   Updated: 2015/01/10 14:51:40 by rcargou          ###   ########.fr       */
+/*   Created: 2015/01/10 14:37:12 by rcargou           #+#    #+#             */
+/*   Updated: 2015/01/10 14:39:45 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "rc_math.h"
 
-t_point rcm_vecsum(t_point vec1, t_point vec2)
+double rcm_vecnorme(t_point vec)
 {
-	vec1.x += vec2.x;
-	vec1.y += vec2.y;
-	vec1.z += vec2.z;
-	return (vec1);
+	return (rcm_sqrt(vec.x * vec.x + vec.y * vec.y + vec.z * vec.z));
 }
