@@ -6,7 +6,7 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 17:41:32 by rcargou           #+#    #+#             */
-/*   Updated: 2015/01/04 22:00:37 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/01/11 19:42:08 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ typedef	struct		s_list
 	struct s_list	*next;
 }					t_list;
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
+int					ft_tabstrlen(char **tab);
 char				*ft_strrev(char *str);
 int					ft_dectobin(int n);
 char				*ft_backchrfils(char *s1, char *s2, char c);
