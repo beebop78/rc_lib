@@ -6,7 +6,7 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/10 00:49:59 by rcargou           #+#    #+#             */
-/*   Updated: 2015/01/11 14:18:52 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/01/11 17:20:04 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ t_point			rcm_vecscalarfactor(t_point vec, double factor);
 double			*rcm_2dequation(double a, double b, double c, int *n);
 t_point			rcm_vecnormalize(t_point vec);
 t_point			rcm_rotmatrice(t_point point, double rotx, double roty, double rotz);
-double			rcm_vecnorme(t_point vec)
+double			rcm_vecnorme(t_point vec);
 t_point			rcm_vecneg(t_point vec);
 #endif
 
