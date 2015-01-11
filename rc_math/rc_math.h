@@ -6,14 +6,14 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/10 00:49:59 by rcargou           #+#    #+#             */
-/*   Updated: 2015/01/11 14:14:12 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/01/11 14:18:52 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef RC_MATH_H
 # define RC_MATH_H
 # define PI 3.1415926535897932384626433832795
-# define PRECISION 1E-26
+# define PRECISION 1E-6
 # include <stdlib.h>
 
 typedef struct	s_point
@@ -31,5 +31,6 @@ double			*rcm_2dequation(double a, double b, double c, int *n);
 t_point			rcm_vecnormalize(t_point vec);
 t_point			rcm_rotmatrice(t_point point, double rotx, double roty, double rotz);
 double			rcm_vecnorme(t_point vec)
+t_point			rcm_vecneg(t_point vec);
 #endif
 
