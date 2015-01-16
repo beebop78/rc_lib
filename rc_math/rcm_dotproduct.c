@@ -6,7 +6,7 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/11 21:01:42 by rcargou           #+#    #+#             */
-/*   Updated: 2015/01/11 21:03:37 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/01/16 14:19:35 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 double rcm_dotproduct(t_point a, t_point b)
 {
-	return (a.x * b.x + a.y * b.y + a.z + b.z);
+	return (a.x * b.x + a.y * b.y + a.z * b.z);
 }
