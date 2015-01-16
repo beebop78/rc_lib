@@ -6,7 +6,7 @@
 #    By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/04 18:16:58 by rcargou           #+#    #+#              #
-#    Updated: 2015/01/04 22:00:45 by rcargou          ###   ########.fr        #
+#    Updated: 2015/01/16 15:39:53 by rcargou          ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -21,13 +21,13 @@ OBJ = $(SRC:.c=.o)
 all : $(NAME)
 
 $(NAME) :
-	gcc -Wall -Wextra -Werror -c $(SRC) libft.h
-	ar rc libft.a $(OBJ)
+	@gcc -Wall -Wextra -Werror -c $(SRC) libft.h
+	@ar rc libft.a $(OBJ)
 
 clean :
-	rm -rf $(OBJ)
+	@rm -rf $(OBJ)
 
 fclean : clean
-	rm -rf $(NAME)
+	@rm -rf $(NAME)
 
 re : fclean all
