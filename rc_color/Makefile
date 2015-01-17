@@ -6,13 +6,13 @@
 #    By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/01/16 15:01:44 by rcargou           #+#    #+#              #
-#    Updated: 2015/01/16 15:11:46 by rcargou          ###   ########.fr        #
+#    Updated: 2015/01/17 02:30:33 by rcargou          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libcolor.a
 
-SRC = color_add.c color_setbright.c color_getcomp.c
+SRC = color_add.c color_setbright.c color_getcomp.c color_diff.c color_average.c
 
 OBJ = $(SRC:.c=.o)
 
