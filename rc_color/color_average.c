@@ -6,7 +6,7 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/17 02:05:30 by rcargou           #+#    #+#             */
-/*   Updated: 2015/01/17 02:09:09 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/01/17 02:41:40 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,9 @@ int color_average(int c1, int c2)
 {
 	int new;
 
-	new = ((color_getcomp(c1, 'r') + getcomp(c2, 'r')) / 2) << 16;
-	new += ((color_getcomp(c1, 'g') + getcomp(c2, 'g')) / 2) << 8;
-	new += ((color_getcomp(c1, 'b') + getcomp(c2, 'b')) / 2);
+	new = ((color_getcomp(c1, 'r') + color_getcomp(c2, 'r')) / 2) << 16;
+	new += ((color_getcomp(c1, 'g') + color_getcomp(c2, 'g')) / 2) << 8;
+	new += ((color_getcomp(c1, 'b') + color_getcomp(c2, 'b')) / 2);
 
 	return (new);
 }
