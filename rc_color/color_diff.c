@@ -1,19 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   color.h                                            :+:      :+:    :+:   */
+/*   color_diff.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/01/16 14:58:21 by rcargou           #+#    #+#             */
-/*   Updated: 2015/01/17 02:04:43 by rcargou          ###   ########.fr       */
+/*   Created: 2015/01/17 01:59:42 by rcargou           #+#    #+#             */
+/*   Updated: 2015/01/17 02:02:58 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef COLOR_H
-# define COLOR_H
-int				color_add(int color1, int color2);
-int				color_getcomp(int color, char c);
-int				color_setbright(int color, double c);
-int				color_diff(int c1, int c2);
-#endif
+#include "color.h"
+
+int color_diff(int c1, int c2)
+{
+	int a;
+
+	a = (color_getcomp(c1, 'r') - color_getcomp(c2, 'r')
+		+ color_getcomp(c1, 'b') - color_getcomp(c2, 'b')
+		+ color_getcomp(c1, 'g') - color_getcomp(c2, 'g'));
+	if (a < 0)
+		a = -a;
+	return (a);
+}

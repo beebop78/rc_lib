@@ -1,19 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   color.h                                            :+:      :+:    :+:   */
+/*   color_average.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/01/16 14:58:21 by rcargou           #+#    #+#             */
-/*   Updated: 2015/01/17 02:04:43 by rcargou          ###   ########.fr       */
+/*   Created: 2015/01/17 02:05:30 by rcargou           #+#    #+#             */
+/*   Updated: 2015/01/17 02:09:09 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef COLOR_H
-# define COLOR_H
-int				color_add(int color1, int color2);
-int				color_getcomp(int color, char c);
-int				color_setbright(int color, double c);
-int				color_diff(int c1, int c2);
-#endif
+#include "color.h"
+
+int color_average(int c1, int c2)
+{
+	int new;
+
+	new = ((color_getcomp(c1, 'r') + getcomp(c2, 'r')) / 2) << 16;
+	new += ((color_getcomp(c1, 'g') + getcomp(c2, 'g')) / 2) << 8;
+	new += ((color_getcomp(c1, 'b') + getcomp(c2, 'b')) / 2);
+
+	return (new);
+}
