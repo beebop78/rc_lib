@@ -6,14 +6,15 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/10 17:23:00 by rcargou           #+#    #+#             */
-/*   Updated: 2015/01/12 17:29:30 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/01/28 15:06:31 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "rc_math.h"
 #include "math.h"
 #include <stdio.h>
-t_point filepoint(double a, double b, double c)
+
+t_point		filepoint(double a, double b, double c)
 {
 	t_point new;
 

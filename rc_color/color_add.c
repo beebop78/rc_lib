@@ -6,7 +6,7 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/16 14:30:37 by rcargou           #+#    #+#             */
-/*   Updated: 2015/01/16 17:43:23 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/01/28 15:08:18 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,4 +30,3 @@ int				color_add(int color1, int color2)
 	new += v2;
 	return (new);
 }
-

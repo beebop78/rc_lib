@@ -6,7 +6,7 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/16 14:27:23 by rcargou           #+#    #+#             */
-/*   Updated: 2015/01/16 14:30:25 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/01/28 15:08:36 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,5 @@ int color_setbright(int color, double c)
 	c2 = c2 >> 8;
 	c2 *= c;
 	c2 = c2 << 8;
-	return (c1 + c2 + (color & 0x0000FF) * c); 
+	return (c1 + c2 + (color & 0x0000FF) * c);
 }
-

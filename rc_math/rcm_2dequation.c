@@ -6,7 +6,7 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/10 01:00:47 by rcargou           #+#    #+#             */
-/*   Updated: 2015/01/10 14:50:29 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/01/28 15:06:17 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,4 +36,3 @@ double *rcm_2dequation(double a, double b, double c, int *n)
 	*n = 2;
 	return (solutions);
 }
-

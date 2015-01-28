@@ -6,7 +6,7 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 15:35:21 by rcargou           #+#    #+#             */
-/*   Updated: 2014/11/08 18:42:24 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/01/28 15:07:38 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void ft_putnbr(int n)
 			ft_putchar('-');
 			n *= -1;
 		}
-		if (n > 10)
+		if (n >= 10)
 			ft_putnbr(n / 10);
 		ft_putchar(n % 10 + 48);
 	}
