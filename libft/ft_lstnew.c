@@ -6,7 +6,7 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/08 11:43:03 by rcargou           #+#    #+#             */
-/*   Updated: 2014/11/09 18:10:11 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/03/20 20:33:45 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,6 @@ t_list *ft_lstnew(void const *content, size_t content_size)
 	if (!content)
 		new->content_size = 0;
 	new->next = 0;
+	new->prev = 0;
 	return (new);
 }

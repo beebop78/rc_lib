@@ -6,7 +6,7 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 17:41:32 by rcargou           #+#    #+#             */
-/*   Updated: 2015/02/06 15:13:14 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/03/22 17:19:15 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,13 @@ typedef	struct		s_list
 	void			*content;
 	size_t			content_size;
 	struct s_list	*next;
+	struct s_list	*prev;
 }					t_list;
+void				ft_lstmove(t_list **a, t_list *b, t_list *c);
+void				ft_lstinsert(t_list **a, t_list *b, t_list *c);
+void				ft_lstsup(t_list **start, t_list *elem);
+void				ft_lstsort(t_list **a, int (*cmp)(t_list *a, t_list *b));
+void				ft_lstswap(t_list **a, t_list *b, t_list *c);
 char				*ft_strbchr(char *str, char c);
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 int					ft_tabstrlen(char **tab);
