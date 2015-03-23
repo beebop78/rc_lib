@@ -6,7 +6,7 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 17:41:32 by rcargou           #+#    #+#             */
-/*   Updated: 2015/03/22 17:19:15 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/03/23 19:27:40 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ typedef	struct		s_list
 	struct s_list	*next;
 	struct s_list	*prev;
 }					t_list;
+void				ft_putnbrbase(int n, char *alphabet);
 void				ft_lstmove(t_list **a, t_list *b, t_list *c);
 void				ft_lstinsert(t_list **a, t_list *b, t_list *c);
 void				ft_lstsup(t_list **start, t_list *elem);
