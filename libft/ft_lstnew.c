@@ -6,7 +6,7 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/08 11:43:03 by rcargou           #+#    #+#             */
-/*   Updated: 2015/03/20 20:33:45 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/03/24 18:02:05 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ t_list *ft_lstnew(void const *content, size_t content_size)
 	t_list *new;
 
 	new = malloc(sizeof(t_list));
-	new->content = malloc(sizeof(content_size));
+	new->content = malloc((content_size));
 	if (content)
 		new->content = ft_memcpy(new->content, (void*)content, content_size);
 	new->content_size = content_size;
