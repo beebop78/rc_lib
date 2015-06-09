@@ -6,7 +6,7 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 17:41:32 by rcargou           #+#    #+#             */
-/*   Updated: 2015/05/13 17:39:05 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/06/09 20:42:44 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ typedef	struct		s_list
 	struct s_list	*next;
 	struct s_list	*prev;
 }					t_list;
+void				ft_freetab(char **tab);
 char				*ft_newstrc(char *s, char c);
 float				ft_atof(char *str);
 int					*ft_getoptions(char *alphabet, int ac, char **av);
