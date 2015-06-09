@@ -1,27 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_freetab.c                                       :+:      :+:    :+:   */
+/*   ft_newstrchr.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/06/09 20:41:18 by rcargou           #+#    #+#             */
-/*   Updated: 2015/06/09 21:06:19 by rcargou          ###   ########.fr       */
+/*   Created: 2015/06/09 22:15:31 by rcargou           #+#    #+#             */
+/*   Updated: 2015/06/09 22:17:46 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
-void ft_freetab(char **tab, int len)
+char *ft_newstrchr(char *str, char c)
 {
-	int i;
+	int		len;
+	char	*new;
 
-	i = 0;
-	while (i < len)
-	{
-		free(tab[i]);
-		i++;
-	}
-	free(tab);
+	len = 0;
+	while (str[len] && str[len] != c)
+		len++;
+	new = ft_strnew(len + 1);
+	ft_memcpy(new, str, len);
+	new[len + 1] = 0;
+	return (new);
 }
