@@ -6,7 +6,7 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/06/10 02:47:43 by rcargou           #+#    #+#             */
-/*   Updated: 2015/06/10 02:50:52 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/06/10 03:05:23 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-t_list *ft_lstcpynew(t_list *content, size_t size)
+t_list *ft_lstcpynew(void *content, size_t size)
 {
 	t_list *new;
 
