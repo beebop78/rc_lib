@@ -6,7 +6,7 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/10 00:49:59 by rcargou           #+#    #+#             */
-/*   Updated: 2015/01/28 15:06:56 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/06/30 19:46:56 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 # define PI 3.1415926535897932384626433832795
 # define PRECISION 1E-6
 # include <stdlib.h>
+# include <math.h>
 
 typedef struct	s_point
 {
@@ -38,4 +39,10 @@ t_point			rcm_vecneg(t_point vec);
 double			rcm_dotproduct(t_point a, t_point b);
 t_point			rcm_vecsub(t_point v1, t_point v2);
 t_point			rcm_vecproject(t_point a, t_point b);
+float			*rcm_transmat(float x, float y, float z);
+float			*rcm_scalemat(float scale);
+float			*rcm_rotmat(float rotx, float roty, float rotz);
+float			*rcm_projectmat(float fov, float near, float far, float aspect);
+float			*mulmat(float *dst, float *s);
+float			*rcm_identitymat(void);
 #endif
