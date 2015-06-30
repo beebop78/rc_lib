@@ -6,7 +6,7 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 17:41:32 by rcargou           #+#    #+#             */
-/*   Updated: 2015/06/10 03:05:32 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/06/13 13:43:50 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ typedef	struct		s_list
 	struct s_list	*next;
 	struct s_list	*prev;
 }					t_list;
+int					ft_lstlen(t_list *list);
 t_list				*ft_lstcpynew(void *content, size_t size);
 void				ft_lstinsertsort(t_list **start,
 						int (*cmp)(t_list *a, t_list *b), t_list *elem);

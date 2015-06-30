@@ -1,33 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_lstlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/03 15:29:19 by rcargou           #+#    #+#             */
-/*   Updated: 2014/11/05 11:44:39 by rcargou          ###   ########.fr       */
+/*   Created: 2015/06/13 13:42:19 by rcargou           #+#    #+#             */
+/*   Updated: 2015/06/13 13:43:18 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
-char *ft_strdup(const char *s1)
+int ft_lstlen(t_list *list)
 {
-	char	*dest;
-	int		a;
+	int i;
 
-	a = 0;
-	dest = malloc(sizeof(char) * ft_strlen(s1) + 1);
-	if (dest)
+	i = 0;
+	while (list)
 	{
-		while (s1[a])
-		{
-			dest[a] = s1[a];
-			a++;
-		}
+		i++;
+		list = list->next;
 	}
-	dest[a] = 0;
-	return (dest);
+	return (i);
 }

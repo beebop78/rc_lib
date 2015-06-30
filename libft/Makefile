@@ -6,7 +6,7 @@
 #    By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/04 18:16:58 by rcargou           #+#    #+#              #
-#    Updated: 2015/06/10 02:49:26 by rcargou          ###   ########.fr        #
+#    Updated: 2015/06/13 18:30:02 by rcargou          ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -17,7 +17,7 @@ SRC = ft_memdel.c ft_putnbr_fd.c  ft_strdel.c ft_strmapi.c ft_strsplit.c ft_isdi
 ft_lstnew.c ft_lstdelone.c ft_lstdel.c ft_lstadd.c ft_lstiter.c ft_lstmap.c ft_strerase.c \
 ft_strnchr.c ft_abs.c ft_pow.c ft_bintodec.c ft_backchrfils.c ft_dectobin.c ft_strrev.c \
 ft_strbchr.c ft_lstswap.c ft_lstsort.c ft_lstmove.c ft_lstinsert.c ft_lstsup.c ft_putnbrbase.c ft_nbrlenbase.c ft_uputnbrbase.c ft_getoptions.c ft_tabstrlen.c ft_atof.c \
-ft_newstrc.c ft_freetab.c ft_newstrchr.c ft_lstinsertsort.c ft_lstcpynew.c \
+ft_newstrc.c ft_freetab.c ft_newstrchr.c ft_lstinsertsort.c ft_lstcpynew.c ft_lstlen.c \
 
 OBJ = $(SRC:.c=.o)
 
