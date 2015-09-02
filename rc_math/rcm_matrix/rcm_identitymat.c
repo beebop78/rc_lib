@@ -6,15 +6,15 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/06/30 17:09:38 by rcargou           #+#    #+#             */
-/*   Updated: 2015/06/30 17:11:24 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/09/02 15:00:40 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "rc_math.h"
 
-float   *rcm_identitymat(void)
+float	*rcm_identitymat(void)
 {
-	float   *m;
+	float	*m;
 
 	m = (float*)malloc(sizeof(float) * 16);
 	if (m == NULL)

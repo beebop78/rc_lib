@@ -6,14 +6,14 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/08 12:31:10 by rcargou           #+#    #+#             */
-/*   Updated: 2014/11/08 15:26:13 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/09/02 15:34:40 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include "libft.h"
 
-void ft_lstdel(t_list **alst, void (*del)(void*, size_t))
+void	ft_lstdel(t_list **alst, void (*del)(void*, size_t))
 {
 	if (del && alst)
 	{

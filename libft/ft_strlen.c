@@ -6,13 +6,13 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 15:27:03 by rcargou           #+#    #+#             */
-/*   Updated: 2014/11/05 16:04:02 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/09/02 15:44:37 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t ft_strlen(const char *s)
+size_t	ft_strlen(const char *s)
 {
 	size_t i;
 

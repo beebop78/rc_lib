@@ -6,14 +6,14 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/04 21:59:45 by rcargou           #+#    #+#             */
-/*   Updated: 2015/01/04 22:00:23 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/09/02 15:46:12 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include "libft.h"
 
-char *ft_strrev(char *str)
+char	*ft_strrev(char *str)
 {
 	int		len;
 	int		i;

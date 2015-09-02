@@ -6,13 +6,13 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 21:03:00 by rcargou           #+#    #+#             */
-/*   Updated: 2014/11/05 22:13:13 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/09/02 15:43:05 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int ft_strequ(char const *s1, char const *s2)
+int		ft_strequ(char const *s1, char const *s2)
 {
 	int a;
 

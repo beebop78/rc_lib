@@ -6,11 +6,11 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 15:36:35 by rcargou           #+#    #+#             */
-/*   Updated: 2014/11/04 20:06:26 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/09/02 15:42:41 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *ft_strcpy(char *dst, const char *src)
+char	*ft_strcpy(char *dst, const char *src)
 {
 	int a;
 

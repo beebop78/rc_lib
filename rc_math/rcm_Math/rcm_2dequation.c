@@ -6,13 +6,13 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/10 01:00:47 by rcargou           #+#    #+#             */
-/*   Updated: 2015/01/28 15:06:17 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/09/02 15:52:44 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "rc_math.h"
 
-double *rcm_2dequation(double a, double b, double c, int *n)
+double	*rcm_2dequation(double a, double b, double c, int *n)
 {
 	double	delta;
 	double	*solutions;

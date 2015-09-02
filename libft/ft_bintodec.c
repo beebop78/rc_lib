@@ -6,13 +6,13 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/04 19:34:00 by rcargou           #+#    #+#             */
-/*   Updated: 2015/01/04 19:34:30 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/09/02 15:32:55 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int			ft_bintodec(int n)
+int		ft_bintodec(int n)
 {
 	int a;
 	int new;

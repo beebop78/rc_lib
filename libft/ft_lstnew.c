@@ -6,14 +6,14 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/08 11:43:03 by rcargou           #+#    #+#             */
-/*   Updated: 2015/03/24 18:02:05 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/09/02 15:36:17 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
-t_list *ft_lstnew(void const *content, size_t content_size)
+t_list	*ft_lstnew(void const *content, size_t content_size)
 {
 	t_list *new;
 

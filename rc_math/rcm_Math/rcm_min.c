@@ -6,11 +6,11 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/10 14:40:20 by rcargou           #+#    #+#             */
-/*   Updated: 2015/01/10 14:53:55 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/09/02 15:52:58 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-double rcm_min(double *values, int size)
+double	rcm_min(double *values, int size)
 {
 	int				a;
 	double			smalest_value;

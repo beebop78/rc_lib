@@ -6,13 +6,13 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/03/31 17:39:56 by rcargou           #+#    #+#             */
-/*   Updated: 2015/03/31 18:22:51 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/09/02 15:48:03 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_unputnbrbase(unsigned long int n, char *alphabet, int widht)
+void	ft_unputnbrbase(unsigned long int n, char *alphabet, int widht)
 {
 	unsigned long int base;
 

@@ -6,11 +6,11 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 17:06:08 by rcargou           #+#    #+#             */
-/*   Updated: 2014/11/05 11:24:54 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/09/02 15:33:39 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isalpha(int c)
+int		ft_isalpha(int c)
 {
 	return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
 }

@@ -6,11 +6,11 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 19:58:27 by rcargou           #+#    #+#             */
-/*   Updated: 2014/11/06 12:08:57 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/09/02 15:43:28 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_striter(char *s, void (*f)(char *))
+void	ft_striter(char *s, void (*f)(char *))
 {
 	if (s && f)
 		while (*s)

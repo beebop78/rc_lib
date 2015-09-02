@@ -6,13 +6,13 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/17 02:05:30 by rcargou           #+#    #+#             */
-/*   Updated: 2015/01/28 15:08:09 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/09/02 15:14:06 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "color.h"
 
-int color_average(int c1, int c2)
+int		color_average(int c1, int c2)
 {
 	int new;
 

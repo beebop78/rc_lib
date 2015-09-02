@@ -6,13 +6,13 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 16:41:35 by rcargou           #+#    #+#             */
-/*   Updated: 2014/11/06 12:07:59 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/09/02 15:49:17 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 
-char *ft_strnstr(const char *s1, const char *s2, size_t n)
+char	*ft_strnstr(const char *s1, const char *s2, size_t n)
 {
 	char				*tmp;
 	unsigned int		a;

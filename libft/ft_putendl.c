@@ -6,13 +6,13 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 15:32:11 by rcargou           #+#    #+#             */
-/*   Updated: 2014/11/04 19:41:55 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/09/02 15:40:22 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putendl(char const *s)
+void	ft_putendl(char const *s)
 {
 	ft_putstr(s);
 	ft_putchar('\n');

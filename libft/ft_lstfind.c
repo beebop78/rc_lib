@@ -1,29 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcat.c                                        :+:      :+:    :+:   */
+/*   ft_lstfind.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/03 15:45:05 by rcargou           #+#    #+#             */
-/*   Updated: 2015/09/02 15:41:56 by rcargou          ###   ########.fr       */
+/*   Created: 2015/08/15 15:44:49 by rcargou           #+#    #+#             */
+/*   Updated: 2015/09/02 15:34:57 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strcat(char *s1, const char *s2)
+int		ft_lstfind(t_list **lst, t_list *elem)
 {
-	int a;
-	int len;
+	t_list *tmp;
 
-	a = 0;
-	len = ft_strlen(s1);
-	while (s2[a])
+	if (!lst || !*lst)
+		return (0);
+	tmp = *lst;
+	while (tmp != (*lst)->prev)
 	{
-		s1[len + a] = s2[a];
-		a++;
+		if (tmp == elem)
+			return (1);
+		tmp = tmp->next;
 	}
-	s1[len + a] = 0;
-	return (s1);
+	if (tmp == elem)
+		return (1);
+	return (0);
 }

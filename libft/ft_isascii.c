@@ -6,11 +6,11 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 17:15:49 by rcargou           #+#    #+#             */
-/*   Updated: 2014/11/03 17:16:25 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/09/02 15:33:46 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isascii(int c)
+int		ft_isascii(int c)
 {
 	return (c <= 127 && c >= 0);
 }

@@ -6,14 +6,14 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 16:31:05 by rcargou           #+#    #+#             */
-/*   Updated: 2014/11/05 20:06:21 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/09/02 15:45:42 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include "libft.h"
 
-char *ft_strstr(const char *s1, const char *s2)
+char	*ft_strstr(const char *s1, const char *s2)
 {
 	char	*tmp;
 	int		a;

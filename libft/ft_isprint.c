@@ -6,11 +6,11 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 17:19:05 by rcargou           #+#    #+#             */
-/*   Updated: 2014/11/05 15:04:45 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/09/02 15:34:08 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isprint(int c)
+int		ft_isprint(int c)
 {
 	return (c >= 32 && c < 127);
 }

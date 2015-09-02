@@ -6,13 +6,13 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/17 01:59:42 by rcargou           #+#    #+#             */
-/*   Updated: 2015/01/17 02:02:58 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/09/02 15:14:15 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "color.h"
 
-int color_diff(int c1, int c2)
+int		color_diff(int c1, int c2)
 {
 	int a;
 

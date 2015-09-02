@@ -6,13 +6,13 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/04 20:45:26 by rcargou           #+#    #+#             */
-/*   Updated: 2015/01/04 22:02:19 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/09/02 15:33:12 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_dectobin(int n)
+int		ft_dectobin(int n)
 {
 	int new;
 	int a;

@@ -6,7 +6,7 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 16:54:01 by rcargou           #+#    #+#             */
-/*   Updated: 2014/11/11 14:40:24 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/09/02 15:32:28 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <string.h>
 #include "libft.h"
 
-int ft_atoi(const char *str)
+int		ft_atoi(const char *str)
 {
 	int a;
 	int b;

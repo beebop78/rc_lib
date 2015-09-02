@@ -6,17 +6,17 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 19:48:59 by rcargou           #+#    #+#             */
-/*   Updated: 2014/11/06 12:29:45 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/09/02 15:48:34 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-void ft_strdel(char **as)
+void	ft_strdel(char **as)
 {
 	if (as)
 	{
-		free (*as);
+		free(*as);
 		*as = NULL;
 	}
 }

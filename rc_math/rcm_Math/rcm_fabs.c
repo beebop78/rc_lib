@@ -6,11 +6,11 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/10 02:04:28 by rcargou           #+#    #+#             */
-/*   Updated: 2015/01/10 02:05:21 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/09/02 15:52:51 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-double rcm_fabs(double n)
+double	rcm_fabs(double n)
 {
 	if (n < 0)
 		return (-n);

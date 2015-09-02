@@ -6,13 +6,13 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/03/22 16:50:27 by rcargou           #+#    #+#             */
-/*   Updated: 2015/03/22 17:10:29 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/09/02 15:36:28 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_lstsup(t_list **start, t_list *elem)
+void	ft_lstsup(t_list **start, t_list *elem)
 {
 	if (elem == (*start))
 	{

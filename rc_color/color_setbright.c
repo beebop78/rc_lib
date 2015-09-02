@@ -6,11 +6,11 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/16 14:27:23 by rcargou           #+#    #+#             */
-/*   Updated: 2015/01/28 15:08:36 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/09/02 15:14:35 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int color_setbright(int color, double c)
+int		color_setbright(int color, double c)
 {
 	unsigned int c1;
 	unsigned int c2;

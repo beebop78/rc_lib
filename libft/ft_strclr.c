@@ -6,11 +6,11 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 19:56:23 by rcargou           #+#    #+#             */
-/*   Updated: 2014/11/06 12:30:14 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/09/02 15:42:24 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_strclr(char *s)
+void	ft_strclr(char *s)
 {
 	if (s)
 		while (*(s))

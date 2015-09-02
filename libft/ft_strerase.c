@@ -6,13 +6,13 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/29 13:37:47 by rcargou           #+#    #+#             */
-/*   Updated: 2014/12/29 17:22:36 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/09/02 15:43:17 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strerase(char *str, int n)
+char	*ft_strerase(char *str, int n)
 {
 	int i;
 

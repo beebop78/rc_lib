@@ -6,11 +6,11 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 17:20:00 by rcargou           #+#    #+#             */
-/*   Updated: 2014/11/03 17:27:00 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/09/02 15:47:39 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_toupper(int c)
+int		ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')
 		return (c + ('A' - 'a'));

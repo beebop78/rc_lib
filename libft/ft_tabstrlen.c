@@ -6,11 +6,11 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/11 19:40:47 by rcargou           #+#    #+#             */
-/*   Updated: 2015/03/24 13:04:10 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/09/02 15:49:23 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_tabstrlen(char **tab)
+int		ft_tabstrlen(char **tab)
 {
 	int i;
 

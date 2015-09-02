@@ -6,13 +6,13 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/03/20 20:34:50 by rcargou           #+#    #+#             */
-/*   Updated: 2015/03/22 15:37:40 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/09/02 15:36:44 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void norme(t_list *tmp3, t_list *e1, t_list *e2)
+void	norme(t_list *tmp3, t_list *e1, t_list *e2)
 {
 	if (tmp3 && tmp3 != e1)
 		tmp3->prev = e1;
@@ -23,7 +23,7 @@ void norme(t_list *tmp3, t_list *e1, t_list *e2)
 		e1->prev = e2;
 }
 
-void ft_lstswap(t_list **start, t_list *e1, t_list *e2)
+void	ft_lstswap(t_list **start, t_list *e1, t_list *e2)
 {
 	t_list *tmp2;
 	t_list *tmp3;

@@ -6,11 +6,11 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 11:46:54 by rcargou           #+#    #+#             */
-/*   Updated: 2014/11/06 12:29:01 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/09/02 15:43:40 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_striteri(char *s, void (*f)(unsigned int, char *))
+void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
 	int i;
 

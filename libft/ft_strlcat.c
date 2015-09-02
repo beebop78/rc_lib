@@ -6,13 +6,13 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 18:37:31 by rcargou           #+#    #+#             */
-/*   Updated: 2014/11/04 20:02:07 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/09/02 15:44:01 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcat(char *dst, const char *src, size_t size)
+size_t		ft_strlcat(char *dst, const char *src, size_t size)
 {
 	char	*cur;
 	char	*reader;

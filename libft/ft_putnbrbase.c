@@ -6,13 +6,13 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/03/23 19:20:04 by rcargou           #+#    #+#             */
-/*   Updated: 2015/03/24 18:38:53 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/09/02 15:41:04 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putnbrbase(long int n, char *alphabet, int widht)
+void	ft_putnbrbase(long int n, char *alphabet, int widht)
 {
 	int base;
 

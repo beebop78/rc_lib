@@ -6,13 +6,13 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/06/13 13:42:19 by rcargou           #+#    #+#             */
-/*   Updated: 2015/06/13 13:43:18 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/09/02 15:35:39 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_lstlen(t_list *list)
+int		ft_lstlen(t_list *list)
 {
 	int i;
 

@@ -6,14 +6,14 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/06/30 17:08:29 by rcargou           #+#    #+#             */
-/*   Updated: 2015/06/30 19:52:48 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/09/02 15:00:58 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "rc_math.h"
 #include "../libft/libft.h"
 
-float   *mulmat(float *dst, float *s)
+float	*mulmat(float *dst, float *s)
 {
 	float *t;
 

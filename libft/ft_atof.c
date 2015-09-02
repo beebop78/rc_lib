@@ -6,7 +6,7 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/05/08 19:25:32 by rcargou           #+#    #+#             */
-/*   Updated: 2015/05/08 20:17:02 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/09/02 15:32:33 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-float ft_atof(char *str)
+float	ft_atof(char *str)
 {
 	float		new;
 	float		tmp;

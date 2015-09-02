@@ -6,14 +6,14 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/06/30 17:12:28 by rcargou           #+#    #+#             */
-/*   Updated: 2015/06/30 19:52:27 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/09/02 15:02:30 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "rc_math.h"
 #include "../libft/libft.h"
 
-float   *rcm_rotmat(float rotx, float roty, float rotz)
+float	*rcm_rotmat(float rotx, float roty, float rotz)
 {
 	float *new;
 	float *new2;
