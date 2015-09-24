@@ -6,13 +6,13 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/10 02:43:30 by rcargou           #+#    #+#             */
-/*   Updated: 2015/01/10 14:51:40 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/09/02 14:59:39 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "rc_math.h"
 
-t_point rcm_vecsum(t_point vec1, t_point vec2)
+t_point		rcm_vecsum(t_point vec1, t_point vec2)
 {
 	vec1.x += vec2.x;
 	vec1.y += vec2.y;

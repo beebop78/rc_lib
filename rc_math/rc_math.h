@@ -6,7 +6,7 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/10 00:49:59 by rcargou           #+#    #+#             */
-/*   Updated: 2015/06/30 19:46:56 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/09/07 15:51:43 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,6 @@ float			*rcm_transmat(float x, float y, float z);
 float			*rcm_scalemat(float scale);
 float			*rcm_rotmat(float rotx, float roty, float rotz);
 float			*rcm_projectmat(float fov, float near, float far, float aspect);
-float			*mulmat(float *dst, float *s);
+float			*rcm_mulmat(float *dst, float *s);
 float			*rcm_identitymat(void);
 #endif

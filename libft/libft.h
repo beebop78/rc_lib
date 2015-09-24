@@ -6,12 +6,15 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 17:41:32 by rcargou           #+#    #+#             */
-/*   Updated: 2015/06/13 13:43:50 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/09/04 14:24:02 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+
+# define BUFF_SIZE 1
+# include <stdlib.h>
 # include <string.h>
 # include <unistd.h>
 
@@ -22,6 +25,26 @@ typedef	struct		s_list
 	struct s_list	*next;
 	struct s_list	*prev;
 }					t_list;
+
+typedef struct		s_delim
+{
+	size_t			i;
+	size_t			j;
+}					t_delim;
+
+typedef struct		s_buff
+{
+	char			*buff;
+	int				offst;
+	int				fd;
+	int				readret;
+	struct s_buff   *next;
+}					t_buff;
+
+int					get_next_line(int const fd, char **line);
+char				**ft_strsplit_whitespaces(char const *s);
+char				**ft_strstrsplit(char const *s, char *c);
+int					ft_lstfind(t_list **lst, t_list *elem);
 int					ft_lstlen(t_list *list);
 t_list				*ft_lstcpynew(void *content, size_t size);
 void				ft_lstinsertsort(t_list **start,
@@ -30,7 +53,7 @@ char				*ft_newstrchr(char *s, char c);
 void				ft_freetab(char **tab, int len);
 char				*ft_newstrc(char *s, char c);
 float				ft_atof(char *str);
-int					*ft_getoptions(char *alphabet, int ac, char **av);
+int					*ft_getoptions(char *alphabet, int *ac, char ***av);
 int					ft_tabstrlen(char **yolo);
 int					ft_nbrlenbase(long n, int base);
 void				ft_putnbrbase(long n, char *alphabet, int a);

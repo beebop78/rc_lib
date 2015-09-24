@@ -1,18 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rcm_fabs.c                                         :+:      :+:    :+:   */
+/*   rcm_transmat.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/01/10 02:04:28 by rcargou           #+#    #+#             */
-/*   Updated: 2015/09/02 15:52:51 by rcargou          ###   ########.fr       */
+/*   Created: 2015/06/30 18:11:25 by rcargou           #+#    #+#             */
+/*   Updated: 2015/09/02 15:02:36 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-double	rcm_fabs(double n)
+#include "rc_math.h"
+
+float	*rcm_transmat(float x, float y, float z)
 {
-	if (n < 0)
-		return (-n);
-	return (n);
+	float *new;
+
+	new = rcm_identitymat();
+	new[3] = x;
+	new[7] = y;
+	new[11] = z;
+	return (new);
 }

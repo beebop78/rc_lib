@@ -1,18 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rcm_fabs.c                                         :+:      :+:    :+:   */
+/*   rcm_identitymat.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/01/10 02:04:28 by rcargou           #+#    #+#             */
-/*   Updated: 2015/09/02 15:52:51 by rcargou          ###   ########.fr       */
+/*   Created: 2015/06/30 17:09:38 by rcargou           #+#    #+#             */
+/*   Updated: 2015/09/02 15:00:40 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-double	rcm_fabs(double n)
+#include "rc_math.h"
+
+float	*rcm_identitymat(void)
 {
-	if (n < 0)
-		return (-n);
-	return (n);
+	float	*m;
+
+	m = (float*)malloc(sizeof(float) * 16);
+	if (m == NULL)
+		return (NULL);
+	m[0] = 1;
+	m[1] = 0;
+	m[2] = 0;
+	m[3] = 0;
+	m[4] = 0;
+	m[5] = 1;
+	m[6] = 0;
+	m[7] = 0;
+	m[8] = 0;
+	m[9] = 0;
+	m[10] = 1;
+	m[11] = 0;
+	m[12] = 0;
+	m[13] = 0;
+	m[14] = 0;
+	m[15] = 1;
+	return (m);
 }

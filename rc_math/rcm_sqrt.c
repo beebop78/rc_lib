@@ -6,13 +6,13 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/10 01:12:31 by rcargou           #+#    #+#             */
-/*   Updated: 2015/01/28 15:06:40 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/09/02 15:53:05 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "rc_math.h"
 
-double rcm_sqrt(double n)
+double	rcm_sqrt(double n)
 {
 	double lr;
 	double r;

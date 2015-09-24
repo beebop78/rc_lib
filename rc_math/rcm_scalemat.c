@@ -1,18 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rcm_fabs.c                                         :+:      :+:    :+:   */
+/*   rcm_scalemat.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/01/10 02:04:28 by rcargou           #+#    #+#             */
-/*   Updated: 2015/09/02 15:52:51 by rcargou          ###   ########.fr       */
+/*   Created: 2015/06/30 17:10:45 by rcargou           #+#    #+#             */
+/*   Updated: 2015/09/02 14:58:11 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-double	rcm_fabs(double n)
+#include "rc_math.h"
+#include "../libft/libft.h"
+
+float	*rcm_scalemat(float scale)
 {
-	if (n < 0)
-		return (-n);
-	return (n);
+	float *new;
+
+	new = malloc(sizeof(float) * 16);
+	ft_bzero(new, sizeof(float) * 16);
+	new[15] = 1;
+	new[0] = scale;
+	new[5] = scale;
+	new[10] = scale;
+	return (new);
 }
