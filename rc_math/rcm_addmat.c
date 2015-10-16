@@ -1,24 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rcm_transmat.c                                     :+:      :+:    :+:   */
+/*   rcm_addmat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/06/30 18:11:25 by rcargou           #+#    #+#             */
-/*   Updated: 2015/10/02 18:56:49 by rcargou          ###   ########.fr       */
+/*   Created: 2015/09/29 15:31:54 by rcargou           #+#    #+#             */
+/*   Updated: 2015/09/29 15:34:49 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "rc_math.h"
+# include "rc_math.h"
+# include <string.h>
 
-float	*rcm_transmat(float x, float y, float z)
+float *rcm_addmat(float *m1, float *m2)
 {
-	float *new;
+	float		*new;
+	int			i;
 
-	new = rcm_identitymat();
-	new[3] = x;
-	new[7] = y;
-	new[11] = z;
+	new = malloc(sizeof(float) * 16);
+	memcpy(new, m1, sizeof(float) * 16);
+	i = 0;
+	while (i < 16)
+	{
+		new[i] += m2[i];
+		i++;
+	}
 	return (new);
 }

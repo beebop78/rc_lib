@@ -6,7 +6,7 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/06/30 17:10:45 by rcargou           #+#    #+#             */
-/*   Updated: 2015/09/02 14:58:11 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/10/05 03:14:19 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,7 @@ float	*rcm_scalemat(float scale)
 {
 	float *new;
 
-	new = malloc(sizeof(float) * 16);
-	ft_bzero(new, sizeof(float) * 16);
+	new = rcm_identitymat();
 	new[15] = 1;
 	new[0] = scale;
 	new[5] = scale;

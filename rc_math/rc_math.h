@@ -6,7 +6,7 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/10 00:49:59 by rcargou           #+#    #+#             */
-/*   Updated: 2015/09/07 15:51:43 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/10/02 12:04:41 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ typedef struct	s_point
 	double		y;
 	double		z;
 }				t_point;
+int				rcm_veqec(t_point a, t_point b);
 double			rcm_vecsquarelength(t_point vec);
 t_point			rcm_crossproduct(t_point a, t_point b);
 double			rcm_sqrt(double n);
@@ -45,4 +46,7 @@ float			*rcm_rotmat(float rotx, float roty, float rotz);
 float			*rcm_projectmat(float fov, float near, float far, float aspect);
 float			*rcm_mulmat(float *dst, float *s);
 float			*rcm_identitymat(void);
+float			*rcm_mulmatscalar(float *a, int b);
+float			*rcm_addmat(float *a, float *b);
+t_point			rcm_setpoint(float a, float b, float c);
 #endif

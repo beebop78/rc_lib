@@ -6,7 +6,7 @@
 /*   By: rcargou <rcargou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/06/30 17:08:29 by rcargou           #+#    #+#             */
-/*   Updated: 2015/09/07 15:53:40 by rcargou          ###   ########.fr       */
+/*   Updated: 2015/10/02 13:27:11 by rcargou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,8 +34,6 @@ float	*rcm_mulmat(float *dst, float *s)
 	t[13] = dst[1] * s[12] + dst[5] * s[13] + dst[9] * s[14] + dst[13] * s[15];
 	t[14] = dst[2] * s[12] + dst[6] * s[13] + dst[10] * s[14] + dst[14] * s[15];
 	t[15] = dst[3] * s[12] + dst[7] * s[13] + dst[11] * s[14] + dst[15] * s[15];
-	ft_memcpy(dst, t, sizeof(float) * 16);
-	free(t);
-	free(s);
+	memcpy(dst, t, sizeof(float) * 16);
 	return (dst);
 }
